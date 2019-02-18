@@ -14,7 +14,6 @@ namespace MoveUtility
         static int filesDeletedCount = 0;
         static void Main(string[] args)
         {
-
             try
             {
                 string sourcepath = @ConfigurationManager.AppSettings["sourcepath"];
@@ -57,7 +56,6 @@ namespace MoveUtility
                     }
                 }
                 DirectoryCopy(strSource + "/" + tempdir.Name, Copy_dest + "/" + tempdir.Name);
-
             }
 
             FileInfo[] files1 = dirInfo.GetFiles();
